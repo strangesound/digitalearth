@@ -4,9 +4,11 @@ var mySwiper = new Swiper('.swiper-container', {
     loop: true,
     // autoHeight: true,
     setWrapperSize: true,
+    
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
+        // dynamicBullets: true,
     },
 
     // Navigation arrows
