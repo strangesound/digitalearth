@@ -4,6 +4,7 @@ html {
   scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
 }
 body {
+  box-sizing: border-box;
   background-color: black;
   font-family: "GoshaSans", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
   font-weight: 400;
@@ -32,12 +33,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 4% 0px 4%;
-  font-family: G, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0px 4%;
+  font-family: "GoshaSans", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
   align-items: flex-start;
-  /* position: -webkit-sticky;
+  position: -webkit-sticky;
   position: sticky;
-  top: 20px; */
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  padding-top: 20px;
+  backdrop-filter: blur(2px);
 }
 .header__logo-vinzavod {
   width: 80px;
@@ -75,6 +80,12 @@ body {
   border: solid 1px #e52e80;
   opacity: 70%;
 }
+
+/* .header__menu-item:active {
+    border: solid 1px #e52e80;
+    background-color: #e52e80;
+    opacity: 70%;
+  } */
 
 .header__menu-link {
   text-decoration: none;
@@ -132,36 +143,47 @@ body {
 .slider-about__arrow_left {
 }
 .slider-about__text-container {
-    max-width: 70%;
-    margin: auto;
-    /* margin-bottom: 20px; */
+  max-width: 70%;
+  margin: auto;
+  /* margin-bottom: 20px; */
 }
 .slider-about__text-paragraph {
 }
 .slider-about__arrow_right {
 }
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
   position: -webkit-sticky;
   position: sticky;
   bottom: 20px;
+
 }
 .footer__social-icons {
+  
+  margin-left: auto;
+    margin-right: 4%;
+    padding: 0;
 }
 .footer__social-icon-item {
-  /* position: relative; */
-  width: 25px;
-  height: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   margin: 5px;
-  display: block;
   list-style: none;
   border: solid 1px white;
   border-radius: 15px;
-  padding: 10px;
   text-transform: uppercase;
   font-size: 12px;
   cursor: pointer;
   transition: opacity 0.5s;
   text-align: center;
+  color: white;
 }
 
 .footer__social-icon-item:hover {
@@ -169,22 +191,53 @@ body {
   opacity: 70%;
 }
 
-.footer__social-icon-item-link {
+.footer__social-icons-link {
+    display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: white;
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+  width: 100%; 
+  height: 100%; 
 }
 
-/* .swiper-container {
-    width: 100%;
-    height: 100%;
-  } */
-
-
-
-.swiper-pagination-bullet{
-    background-color: white;
+.swiper-pagination-bullet {
+  background-color: white;
 }
 
-.slider-about{
-    margin:0px 4%;
+/* Slider */
+.slider-about {
+  margin: 70px 15%;
+  /* height: 70vh; */
+}
+
+.gallery{
+    display: flex;
+    /* height: 70vh; */
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+
+
+}
+.gallery__player{
+    display: block;
+    
+    width: 500px;
+    height: 500px;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+}
+
+.participants{
+    margin: 70px 15%;
+
+}
+
+.participants__item{
+    max-width: 600px;
+    margin: 10%;
 }
