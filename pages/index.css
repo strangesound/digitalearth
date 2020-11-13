@@ -1,0 +1,168 @@
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts.css");
+html {
+  scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+body {
+  background-color: black;
+  font-family: "GoshaSans", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  font-weight: 400;
+}
+.page {
+  display: block;
+  position: relative;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+.bg-video-main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  /* background-image: url("../images/background.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 4% 0px 4%;
+  font-family: G, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  align-items: flex-start;
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 20px; */
+}
+.header__logo-vinzavod {
+  width: 80px;
+  margin-right: 30px;
+}
+.header__menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__menu-items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.header__menu-item {
+  margin: 0px 5px 10px 5px;
+  display: block;
+  list-style: none;
+  border: solid 1px white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+    font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.header__menu-item:hover {
+  border: solid 1px #e52e80;
+  opacity: 70%;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.header__logo-restore {
+  margin-top: 3px;
+  width: 100px;
+  margin-left: 30px;
+}
+.content {
+}
+.main-page {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-page__digital-earth-log {
+  /* margin: auto; */
+  width: 50%;
+}
+.main-page__subtitle {
+  width: 50%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.main-page__gallery-btn {
+  padding: 10px 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: #e52e80;
+  color: white;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+
+.main-page__gallery-btn:hover{
+    opacity: .7;
+}
+
+
+
+
+.slider-about {
+}
+.slider-about__slider-warper {
+}
+.slider-about__arrow {
+}
+.slider-about__arrow_left {
+}
+.slider-about__text-container {
+}
+.slider-about__text-paragraph {
+}
+.slider-about__arrow_right {
+}
+.footer {
+}
+.footer__columns {
+}
+.footer__column {
+}
+.footer__column_content_copyright {
+}
+.logo {
+}
+.logo_place_footer {
+}
+.footer__author {
+}
+.footer__column_content_info {
+}
+.footer__column-heading {
+}
+.footer__column-links {
+}
+.footer__column-link {
+}
+.links-transition {
+}
+.footer__social-icon {
+}

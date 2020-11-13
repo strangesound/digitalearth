@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "GoshaSans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../vendor/fonts/GoshaSans-Regular.woff2") format("woff2"),
+    url("../vendor/fonts/GoshaSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GoshaSans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../vendor/fonts/GoshaSans-Light.woff2") format("woff2"),
+    url("../vendor/fonts/GoshaSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GoshaSans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../vendor/fonts/GoshaSans-Medium.woff2") format("woff2"),
+    url("../vendor/fonts/GoshaSans-Medium.woff") format("woff");
+}
