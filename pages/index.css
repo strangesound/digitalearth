@@ -1,6 +1,18 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts.css");
 @import url("../vendor/swiper-bundle.css");
+@import url("../blocks/header.css");
+@import url("../blocks/main-page.css");
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --primary-white: #e3e3e3; /* accessible everywhere */
+}
 
 html {
   scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
@@ -14,7 +26,7 @@ body {
 .page {
   display: block;
   position: relative;
-  color: white;
+  color: #e3e3e3;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
@@ -28,113 +40,7 @@ body {
   opacity: 0.7;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0px 0%;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-bottom: 10px;
-  font-family: "GoshaSans", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
-  align-items: flex-start;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  padding-top: 20px;
-  backdrop-filter: blur(2px);
-}
-.header__logo-vinzavod {
-  width: 80px;
-  margin-right: 30px;
-}
-.header__menu {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.header__menu-items {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-}
-.header__menu-item {
-  margin: 0px 5px 10px 5px;
-  display: block;
-  list-style: none;
-  border: solid 1px white;
-  border-radius: 15px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-size: 12px;
-  cursor: pointer;
-  transition: opacity 0.5s;
-}
 
-.header__menu-item:hover {
-  border: solid 1px #e52e80;
-  opacity: 70%;
-}
-
-/* .header__menu-item:active {
-    border: solid 1px #e52e80;
-    background-color: #e52e80;
-    opacity: 70%;
-  } */
-
-.header__menu-link {
-  text-decoration: none;
-  color: white;
-}
-
-.header__logo-restore {
-  margin-top: 3px;
-  width: 100px;
-  margin-left: 30px;
-}
-.content {
-}
-.main-page {
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.main-page__digital-earth-log {
-  /* margin: auto; */
-  width: 50%;
-}
-.main-page__subtitle {
-  width: 50%;
-  text-align: center;
-  font-weight: 300;
-  font-size: 20px;
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-.main-page__gallery-btn {
-  padding: 10px 50px;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  text-transform: uppercase;
-  background-color: #e52e80;
-  color: white;
-  text-decoration: none;
-  transition: opacity 0.5s;
-}
-
-.main-page__gallery-btn:hover {
-  opacity: 0.7;
-}
 
 .slider-about {
   padding: 130px 0;
