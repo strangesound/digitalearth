@@ -1,8 +1,8 @@
 .main-page {
   position: relative;
-  height: 80vh;
+  height: calc(100vh - 130px);
   display: grid;
-  grid-template-rows: 80% auto;
+  grid-template-rows: 80% 20%;
   justify-content: center;
   align-content: center;
 }
@@ -33,7 +33,7 @@
   align-self: end;
   min-width: 150px;
   text-align: center;
-  bottom: 10%;
+  margin-bottom: 35px;
   padding: 15px 50px;
   border-radius: 7px;
   outline: none;
@@ -55,12 +55,12 @@
     grid-template-rows: 80% 20%;
   }
   .main-page__logo-wrapper {
-  width: 92%;
-    }
+    width: 92%;
+  }
   .main-page__subtitle {
     font-size: 24px;
   }
   .main-page__gallery-btn {
-      align-self: start;
+    align-self: start;
   }
 }
