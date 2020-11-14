@@ -51,7 +51,7 @@
 
 @media all and (max-width: 768px) {
   .main-page {
-    height: 100vh;
+    height: calc(100vh - 33px);
     grid-template-rows: 80% 20%;
   }
   .main-page__logo-wrapper {

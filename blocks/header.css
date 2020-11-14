@@ -86,7 +86,8 @@
     display: block;
     overflow-y: scroll;
 
-    /* height: 33px; */
+    height: 33px;
+    overflow: visible;
     /* position: absolute; */
     /* top: 0;
     bottom: 0;
@@ -97,7 +98,6 @@
 
   .header__menu {
     display: block;
-    /* position: relative; */
     transition: 0.3s;
     width: 85%;
     top: 0;
@@ -197,5 +197,6 @@
     opacity: 0;
     pointer-events: none;
     top: -100%;
+    /* display: none; */
   }
 }
