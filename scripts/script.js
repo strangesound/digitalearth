@@ -1,45 +1,35 @@
-var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    // direction: 'horizontal',
-    loop: true,
-    // autoHeight: true,
-    setWrapperSize: true,
+let swiperArray = document.querySelectorAll('.swiper-container')
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        // dynamicBullets: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        1200: {
-            
+for (const element of swiperArray) {
+    var mySwiper1 = new Swiper(element, {
+        // Optional parameters
+        loop: true,
+        // autoHeight: true,
+        setWrapperSize: true,
+    
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
         },
-        1024: {
-           
+    
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-        768: {
-            
-        },
-        675: {
-            
-        }
-    },
-    on: {
-        init: function () {
-            checkArrow();
-        },
-        resize: function () {
-            checkArrow();
-        }
-    }
-});
-
+        
+        // on: {
+        //     init: function () {
+        //         checkArrow();
+        //     },
+        //     resize: function () {
+        //         checkArrow();
+        //     }
+        // }
+    });
+  }
+  
 
 
 
@@ -58,20 +48,22 @@ function checkArrow() {
 
 
 
-// Safari scroll behavior
-function SmoothVerticalScrolling(e, time, where) {
-    var eTop = e.getBoundingClientRect().top;
-    var eAmt = eTop / 100;
-    var curTime = 0;
-    while (curTime <= time) {
-        window.setTimeout(SVS_B, curTime, eAmt, where);
-        curTime += time / 100;
-    }
-}
+// // Safari scroll behavior
+// function SmoothVerticalScrolling(e, time, where) {
+//     var eTop = e.getBoundingClientRect().top;
+//     var eAmt = eTop / 100;
+//     var curTime = 0;
+//     while (curTime <= time) {
+//         window.setTimeout(SVS_B, curTime, eAmt, where);
+//         curTime += time / 100;
+//     }
+// }
 
-function SVS_B(eAmt, where) {
-    if (where == "center" || where == "")
-        window.scrollBy(0, eAmt / 2);
-    if (where == "top")
-        window.scrollBy(0, eAmt);
-}
+// function SVS_B(eAmt, where) {
+//     if (where == "center" || where == "")
+//         window.scrollBy(0, eAmt / 2);
+//     if (where == "top")
+//         window.scrollBy(0, eAmt);
+// }
+
+// // SmoothVerticalScrolling()

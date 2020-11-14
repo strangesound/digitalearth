@@ -2,20 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="./pages/index.css" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>re:Store Digital Earth</title>
   </head>
 
   <body>
-    <div class="bg-video-main"></div>
-
+    <!-- <div class="bg-video-main"></div> -->
+    <video autoplay muted loop id="myVideo" class="bg-video-main">
+      <source src="./images/1036387445-preview.mp4" type="video/mp4">
+    </video>
+    
     <!-- header -->
     <header class="header">
       <img
@@ -67,7 +64,7 @@
       </section>
 
       <section class="slider-about" id="about">
-        <div class="swiper-container">
+        <div class="swiper-container s1">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -133,7 +130,7 @@
 
       <!-- Участники -->
       <section id="participants" class="participants">
-        <div class="swiper-container">
+        <div class="swiper-container s2">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
