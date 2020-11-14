@@ -1,35 +1,50 @@
-
 .main-page {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .main-page__digital-earth-log {
-    /* margin: auto; */
-    width: 50%;
-  }
-  .main-page__subtitle {
-    width: 50%;
-    text-align: center;
-    font-weight: 300;
-    font-size: 20px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
-  .main-page__gallery-btn {
-    padding: 10px 50px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    text-transform: uppercase;
-    background-color: #e52e80;
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.5s;
-  }
-  
-  .main-page__gallery-btn:hover {
-    opacity: 0.7;
-  }
+  position: relative;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 80% auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-page__logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+}
+
+.main-page__digital-earth-log {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.main-page__subtitle {
+  /* width: 50%; */
+  text-align: center;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-top: 60px;
+  /* margin-bottom: 70px; */
+}
+.main-page__gallery-btn {
+  justify-self: center;
+  align-self: end;
+  min-width: 150px;
+  text-align: center;
+  bottom: 10%;
+  padding: 15px 50px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--primary-magenta);
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.5s;
+}
+
+.main-page__gallery-btn:hover {
+  opacity: 0.7;
+}

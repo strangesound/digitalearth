@@ -67,3 +67,19 @@ function checkArrow() {
 // }
 
 // // SmoothVerticalScrolling()
+
+// delegate all click events to this handler...
+document.addEventListener('click', function(e) {
+  
+    // ...we only care about clicks on 'a' elements
+    if (e.target.tagName.toLowerCase() === 'a') {
+  
+      // remove all applied '.active' classes
+      Array.prototype.forEach.call(document.querySelectorAll('.active'), function(el) {
+        el.classList.remove('active');
+      });
+      
+      // add an '.active' class to style the anchor
+      e.target.classList.add('active');  
+    }
+  });
