@@ -9,19 +9,22 @@
 
   <body>
     <section class="video">
-    <video autoplay muted loop id="myVideo" class="bg-video-main">
-      <source src="./images/1036387445-preview.mp4" type="video/mp4">
-    </video>
-  </section>
-    
+      <video autoplay muted loop id="myVideo" class="bg-video-main">
+        <source src="./images/1036387445-preview.mp4" type="video/mp4" />
+      </video>
+    </section>
+
     <!-- header -->
     <header class="header">
+      <div class="header__menu-burger"><span></span></div>
+
       <img
         src="./images/vinzavod_logo.svg"
         alt="Логотип Винзавод"
         class="header__logo-vinzavod"
       />
-      <nav class="header__menu">
+
+      <nav class="header__menu invisible">
         <ul class="header__menu-items">
           <li class="header__menu-item">
             <a href="#about" class="header__menu-link">О проекте</a>
@@ -30,14 +33,43 @@
             <a href="#participants" class="header__menu-link">Участники</a>
           </li>
           <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Работы</a>
+            <a href="#works" class="header__menu-link">Работы</a>
           </li>
           <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Кураторы</a>
+            <a href="#kurators" class="header__menu-link">Эксперты</a>
           </li>
           <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Партнеры</a>
+            <a href="#partners" class="header__menu-link">Организаторы</a>
           </li>
+
+          <ul class="burger-menu__social-icons">
+            <li class="burger-menu__social-icon-item">
+              <a
+                href="https://www.facebook.com/restore.ru/"
+                target="_blank"
+                class="burger-menu__social-icons-link"
+                >fb</a
+              >
+            </li>
+            <li class="burger-menu__social-icon-item">
+              <a
+                href="https://vk.com/re_store"
+                target="_blank"
+                class="burger-menu__social-icons-link"
+                >vk</a
+              >
+            </li>
+            <li class="burger-menu__social-icon-item">
+              <a
+                href="https://www.instagram.com/restore_ru/"
+                target="_blank"
+                class="burger-menu__social-icons-link"
+                >ig</a
+              >
+            </li>
+          </ul>
+
+          <!--  -->
         </ul>
       </nav>
       <img
@@ -51,17 +83,17 @@
       <!-- First page -->
       <section class="main-page">
         <div class="main-page__logo-wrapper">
-        <img
-          src="./images/digital_earth_logo.svg"
-          alt="Логотип Digital Earth"
-          class="main-page__digital-earth-log"
-        />
+          <img
+            src="./images/digital_earth_logo.svg"
+            alt="Логотип Digital Earth"
+            class="main-page__digital-earth-log"
+          />
 
-        <p class="main-page__subtitle">
-          Добро пожаловать на платформу будущего Digital Earth. Испытайте новый
-          уровень погружения в мир искусства и&nbspтехнологий.
-        </p>
-      </div>
+          <p class="main-page__subtitle">
+            Добро пожаловать на платформу будущего Digital Earth. Испытайте
+            новый уровень погружения в мир искусства и&nbspтехнологий.
+          </p>
+        </div>
 
         <a href="#gallery" class="main-page__gallery-btn">Галерея</a>
       </section>
@@ -129,8 +161,6 @@
         <div class="gallery__player">Плеер</div>
       </section>
 
-
-
       <!-- Участники -->
       <section id="participants" class="participants">
         <div class="swiper-container s2">
@@ -139,27 +169,31 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="participants__item">
-                <img src="./images/part-zaur.jpg" alt="Заур Дадаев" class="participants__image"/>
+                <img
+                  src="./images/part-zaur.jpg"
+                  alt="Заур Дадаев"
+                  class="participants__image"
+                />
                 <div class="participants__text-wrapper">
                   <h2 class="participants__header">Заурбек Цагаев</h2>
                   <h3 class="participants__subtitle">Грозный, Россия</h3>
                   <p class="participants__body">
                     Фотограф Заурбек Цугаев Родился в Грозном. По образованию
-                    преподаватель дошкольной педагогики и психологии. В 2012 году
-                    основал первый чеченский фото клуб LAMBERD. В период 2012-2016
-                    организовал воркшопы с участием международно известных фотографов,
-                    среди которых: Стенли Грин,Ольга Краветс, Антон Ланге, Александр
-                    Гронский.
+                    преподаватель дошкольной педагогики и психологии. В 2012
+                    году основал первый чеченский фото клуб LAMBERD. В период
+                    2012-2016 организовал воркшопы с участием международно
+                    известных фотографов, среди которых: Стенли Грин,Ольга
+                    Краветс, Антон Ланге, Александр Гронский.
                   </p>
                   <p class="participants__body">
                     С 2018 г. член творческого союза художников России. Является
-                    победителем всероссийского ежегодного проекта «Best of Russia -
-                    2017» и грантовой программы музея «Гараж» для художников в сфере
-                    актуального искусства (2019/2020).Is the deconstruction method
-                    promising in every case and where lies its boundary?
+                    победителем всероссийского ежегодного проекта «Best of
+                    Russia - 2017» и грантовой программы музея «Гараж» для
+                    художников в сфере актуального искусства (2019/2020).Is the
+                    deconstruction method promising in every case and where lies
+                    its boundary?
                   </p>
                   <a href="#" class="participants__social-link"></a>
-      
                 </div>
               </div>
             </div>
@@ -171,24 +205,25 @@
                   <h3 class="participants__subtitle">Грозный, Россия</h3>
                   <p class="participants__body">
                     Фотограф Заурбек Цугаев Родился в Грозном. По образованию
-                    преподаватель дошкольной педагогики и психологии. В 2012 году
-                    основал первый чеченский фото клуб LAMBERD. В период 2012-2016
-                    организовал воркшопы с участием международно известных фотографов,
-                    среди которых: Стенли Грин,Ольга Краветс, Антон Ланге, Александр
-                    Гронский.
+                    преподаватель дошкольной педагогики и психологии. В 2012
+                    году основал первый чеченский фото клуб LAMBERD. В период
+                    2012-2016 организовал воркшопы с участием международно
+                    известных фотографов, среди которых: Стенли Грин,Ольга
+                    Краветс, Антон Ланге, Александр Гронский.
                   </p>
                   <p class="participants__body">
                     С 2018 г. член творческого союза художников России. Является
-                    победителем всероссийского ежегодного проекта «Best of Russia -
-                    2017» и грантовой программы музея «Гараж» для художников в сфере
-                    актуального искусства (2019/2020).Is the deconstruction method
-                    promising in every case and where lies its boundary?
+                    победителем всероссийского ежегодного проекта «Best of
+                    Russia - 2017» и грантовой программы музея «Гараж» для
+                    художников в сфере актуального искусства (2019/2020).Is the
+                    deconstruction method promising in every case and where lies
+                    its boundary?
                   </p>
                   <a href="#" class="participants__social-link"></a>
-      
                 </div>
               </div>
-            </div><div class="swiper-slide">
+            </div>
+            <div class="swiper-slide">
               <div class="participants__item">
                 <img src="./images/part-zaur.jpg" alt="Заур Дадаев" />
                 <div class="participants__text-wrapper">
@@ -196,21 +231,21 @@
                   <h3 class="participants__subtitle">Грозный, Россия</h3>
                   <p class="participants__body">
                     Фотограф Заурбек Цугаев Родился в Грозном. По образованию
-                    преподаватель дошкольной педагогики и психологии. В 2012 году
-                    основал первый чеченский фото клуб LAMBERD. В период 2012-2016
-                    организовал воркшопы с участием международно известных фотографов,
-                    среди которых: Стенли Грин,Ольга Краветс, Антон Ланге, Александр
-                    Гронский.
+                    преподаватель дошкольной педагогики и психологии. В 2012
+                    году основал первый чеченский фото клуб LAMBERD. В период
+                    2012-2016 организовал воркшопы с участием международно
+                    известных фотографов, среди которых: Стенли Грин,Ольга
+                    Краветс, Антон Ланге, Александр Гронский.
                   </p>
                   <p class="participants__body">
                     С 2018 г. член творческого союза художников России. Является
-                    победителем всероссийского ежегодного проекта «Best of Russia -
-                    2017» и грантовой программы музея «Гараж» для художников в сфере
-                    актуального искусства (2019/2020).Is the deconstruction method
-                    promising in every case and where lies its boundary?
+                    победителем всероссийского ежегодного проекта «Best of
+                    Russia - 2017» и грантовой программы музея «Гараж» для
+                    художников в сфере актуального искусства (2019/2020).Is the
+                    deconstruction method promising in every case and where lies
+                    its boundary?
                   </p>
                   <a href="#" class="participants__social-link"></a>
-      
                 </div>
               </div>
             </div>
@@ -225,12 +260,6 @@
           <!-- If we need scrollbar -->
           <!-- <div class="swiper-scrollbar"></div> -->
         </div>
-        
-        
-        
-        
-        
-
       </section>
     </main>
     <footer class="footer">
@@ -261,6 +290,29 @@
         </li>
       </ul>
     </footer>
+
+    <section class="burger">
+      <nav class="burger-menu">
+        <ul class="burger-menu-items">
+          <li class="burger-menu-item">
+            <a href="#about" class="burger-menu-link">О проекте</a>
+          </li>
+          <li class="burger-menu-item">
+            <a href="#participants" class="burger-menu-link">Участники</a>
+          </li>
+          <li class="burger-menu-item">
+            <a href="#works" class="burger-menu-link">Работы</a>
+          </li>
+          <li class="burger-menu-item">
+            <a href="#kurators" class="burger-menu-link">Эксперты</a>
+          </li>
+          <li class="burger-menu-item">
+            <a href="#partners" class="burger-menu-link">Организаторы</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/script.js"></script>

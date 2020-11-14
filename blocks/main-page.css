@@ -48,3 +48,19 @@
 .main-page__gallery-btn:hover {
   opacity: 0.7;
 }
+
+@media all and (max-width: 768px) {
+  .main-page {
+    height: 100vh;
+    grid-template-rows: 80% 20%;
+  }
+  .main-page__logo-wrapper {
+  width: 92%;
+    }
+  .main-page__subtitle {
+    font-size: 24px;
+  }
+  .main-page__gallery-btn {
+      align-self: start;
+  }
+}

@@ -11,10 +11,8 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  z-index: 999;
+  z-index: 50;
   padding-top: 20px;
-  /* backdrop-filter: blur(2px); */
 }
 .header__logo-vinzavod {
   width: 80px;
@@ -60,10 +58,10 @@
 }
 
 .header__menu-item:active {
-      border: solid 1px #e52e80;
-      background-color: #e52e80;
-      opacity: 70%;
-    }
+  border: solid 1px #e52e80;
+  background-color: #e52e80;
+  opacity: 70%;
+}
 
 .header__menu-link {
   text-decoration: none;
@@ -76,12 +74,129 @@
   margin-left: 30px;
 }
 
-@media all and (max-width: 768px) {
-  .header__logo-restore {
-    display: none;
-  }
+.burger-menu__social-icon-item {
+  display: none;
+}
 
+@media all and (max-width: 768px) {
+  .header__logo-restore,
   .header__logo-vinzavod {
     display: none;
+  }
+  .header {
+    display: block;
+    overflow-y: scroll;
+
+    /* height: 33px; */
+    /* position: absolute; */
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; */
+  }
+
+  .header__menu {
+    display: block;
+    /* position: relative; */
+    transition: 0.3s;
+    width: 85%;
+    top: 0;
+    height: 100%;
+    overflow: scroll;
+    /* height: 1000px; */
+  }
+  .header__menu::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: opacity 0.2s;
+    background-color: rgba(19, 16, 13, 0.85);
+  }
+  .header__menu-items {
+    z-index: 60;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .header__menu-item {
+    background-color: rgba(246, 246, 246, 0.7);
+    border-radius: 8px;
+    padding: 20px 20px;
+    width: auto;
+    text-align: left;
+    font-size: 14px;
+    color: #444443;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .header__menu-link {
+    color: #444443;
+  }
+
+  .header__menu-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    /* border: 2px solid white; */
+    margin-bottom: 20px;
+    transition: 0.3s;
+    top: 0;
+  }
+  .header__menu-burger span {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 9px;
+    transition: 0.3s;
+  }
+
+  .header__menu-burger::before,
+  .header__menu-burger::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: 0.3s;
+  }
+  .header__menu-burger::before {
+    top: 0;
+  }
+  .header__menu-burger::after {
+    bottom: 0;
+  }
+
+  .header__menu-burger.active:before {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  .header__menu-burger.active:after {
+    bottom: 9px;
+    transform: rotate(-45deg);
+  }
+
+  .header__menu-burger.active span {
+    transform: scale(0);
+  }
+  .burger-menu__social-icon-item {
+    display: block;
+  }
+  .invisible {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    top: -100%;
   }
 }

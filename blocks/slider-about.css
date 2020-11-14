@@ -1,0 +1,16 @@
+.slider-about {
+  margin: 70px 15%;
+}
+
+.slider-about__text-container {
+  margin: 0 10%;
+  padding-bottom: 20px;
+}
+
+@media all and (max-width: 768px) {
+  .slider-about,
+  .slider-about__text-container {
+    margin: 0 4%;
+    padding: 0;
+  }
+}

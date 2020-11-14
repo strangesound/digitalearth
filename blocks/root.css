@@ -1,6 +1,7 @@
 :root {
   --primary-white: #e3e3e3; /* accessible everywhere */
   --primary-magenta: rgba(229, 46, 128, .75);
+  --primary-black: #13100d;
 
 }
 
@@ -9,15 +10,19 @@ html {
 }
 body {
   box-sizing: border-box;
-  background-color: black;
+  background-color: var(--primary-black);
   font-family: "GoshaSans", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
   font-weight: 300;
 }
 .page {
   display: block;
   position: relative;
-  color: #e3e3e3;
+  color: var(--primary-white);
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+}
+
+body.lock{
+  overflow: hidden;
 }

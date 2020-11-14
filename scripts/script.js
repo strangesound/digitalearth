@@ -1,24 +1,38 @@
 let swiperArray = document.querySelectorAll('.swiper-container')
 
+const burgerMenuBtn = document.querySelector('.header__menu-burger')
+const burgerMenu = document.querySelector('.header__menu')
+const bodyMain = document.body
+
+function openCloseMenu() {
+    burgerMenu.classList.toggle('invisible');
+    burgerMenuBtn.classList.toggle('active');
+    document.body.classList.toggle('lock')
+}
+
+
+burgerMenuBtn.addEventListener('click', () => openCloseMenu());
+
+
 for (const element of swiperArray) {
     var mySwiper1 = new Swiper(element, {
         // Optional parameters
         loop: true,
         // autoHeight: true,
         setWrapperSize: true,
-    
+
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
-    
+
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        
+
         // on: {
         //     init: function () {
         //         checkArrow();
@@ -28,8 +42,8 @@ for (const element of swiperArray) {
         //     }
         // }
     });
-  }
-  
+}
+
 
 
 
@@ -69,17 +83,20 @@ function checkArrow() {
 // // SmoothVerticalScrolling()
 
 // delegate all click events to this handler...
-document.addEventListener('click', function(e) {
-  
-    // ...we only care about clicks on 'a' elements
-    if (e.target.tagName.toLowerCase() === 'a') {
-  
-      // remove all applied '.active' classes
-      Array.prototype.forEach.call(document.querySelectorAll('.active'), function(el) {
-        el.classList.remove('active');
-      });
-      
-      // add an '.active' class to style the anchor
-      e.target.classList.add('active');  
-    }
-  });
+// document.addEventListener('click', function (e) {
+
+//     // ...we only care about clicks on 'a' elements
+//     if (e.target.tagName.toLowerCase() === 'a') {
+
+//         // remove all applied '.active' classes
+//         Array.prototype.forEach.call(document.querySelectorAll('.active'), function (el) {
+//             el.classList.remove('active');
+//         });
+
+//         // add an '.active' class to style the anchor
+//         e.target.classList.add('active');
+//     }
+// });
+
+
+
