@@ -57,6 +57,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  z-index: 55;
 }
 .gallery__player {
   display: block;
